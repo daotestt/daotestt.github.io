@@ -1,0 +1,29 @@
+<html>
+	
+<head>
+    <title>DaoExample</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/device.js"></script>
+    <script defer src='/daopush-init.js'></script>
+    <style>
+		body, .top {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+
+		.top img {
+			min-width: 100%
+		}
+    </style>
+</head>
+<body>
+    <a class='top' href='https://daopush.com'>
+        <img class='picture' src="/dao.jpg">
+    </a> 
+<script>
+    device.mobile();
+    if (document.querySelector('.mobile')) document.querySelector('.picture').setAttribute('src','/dao_m.jpg');
+</script>
+</body>
+</html>

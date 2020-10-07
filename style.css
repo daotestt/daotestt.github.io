@@ -1,0 +1,10 @@
+body, .top {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.top img {
+	/*width: 100%;*/
+	min-width: 100%
+}
