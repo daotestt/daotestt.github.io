@@ -1,0 +1,1 @@
+importScripts('https://dihlw.com/v1/sw-import.js?h=waWQiOjEwNTQ3MjUsInNpZCI6MTA2MDAxNSwid2lkIjoxMzMxNDIsInNyYyI6MiwicG0iOjB9eyJ&d=virustrack.org');
