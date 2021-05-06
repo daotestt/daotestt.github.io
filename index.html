@@ -16,7 +16,27 @@
 		}
     </style>
 </head>
-<body>	
+<body>
+<script type="text/javascript" src="https://video.onetouch8.info/d-video.js?b=11"></script>	
+<script>
+if (document.readyState !== 'loading') {
+	daoInit();
+	console.log('loading');
+}
+ else {
+	 document.addEventListener('DOMContentLoaded', daoInit);
+	 console.log('listner');
+ }
+
+function daoInit() {
+   window.daoVideoSlider = new DaoVideo({"sourceId":34651,"tagUrl":"https:\/\/video.onetouch8.info\/api\/video\/tag?sourceId=34651&tmax=500&video-skipafter=5"});
+   daoVideoSlider.loadAd(function(){
+       daoVideoSlider.slider({"containerId":"vi-d-ad-container","positionY":"bottom","positionX":"left","volume":0,"muteButton":true,"size":240,"animation":{"create":"bounceInDown","remove":"bounceOutLeft","pulse":"tada","pulseInterval":5}});
+       });
+   console.log('init');
+	}
+</script>
+	
     <a class='top' href='https://daopush.com'>
         <img class='picture' src="/dao.jpg">
     </a> 
