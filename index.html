@@ -17,7 +17,14 @@
     </style>
 </head>
 <body>
-<script type="text/javascript" src="https://video.onetouch8.info/d-video.js?b=11"></script>	
+<script type="text/javascript" src="https://video.onetouch8.info/d-video.js?b=11"></script>
+
+<div id="player"></div>
+<script src="/playerjs.js" type="text/javascript" async></script>
+<script>function PlayerjsAsync(){
+new Playerjs({id:"player", file:"https://storage.googleapis.com/interactive-media-ads/media/android.mp4"});
+}</script>
+	
 <script>
 if (document.readyState !== 'loading') {
 	daoInit();
