@@ -12895,7 +12895,6 @@ function Playerjs(options) {
     };
     var MediaVideo = function (url, container, pip) {
         var pjstg = createElement("video");
-	    pjstg.id = "vi-d-ad-video";
         var hls_config;
         var pipto = 0;
         if (v.taginframe == 1) {
@@ -12979,6 +12978,7 @@ function Playerjs(options) {
             })
         }
         attr(pjstg, {
+            'id': "vi-d-ad-video",
             'src': url,
             'x-webkit-airplay': 'allow'
         });
